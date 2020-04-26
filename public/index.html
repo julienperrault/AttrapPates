@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/phaser.min.js"></script>
+    <script src="js/phaser3.button.js"></script>
+    <script src="js/game.js"></script>
+    <link rel="stylesheet" href="css/98.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <div class="window m-2">
+        <div class="title-bar">
+            <div class="title-bar-text">Attrap' Pâtes ! - Qui récupérera le dernier paquet de pâtes ?</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <div class="d-flex" id="phaser-game"></div>
+            <details>
+                <summary>Histoire</summary>
+                <p>
+                    En pleine période de pénurie alimentaire, Jean Bleu et Jeanne Rouge deux citoyens doivent
+                    remplir leur caddie de bien de première nécessité. Arrivé dans le rayon pâtes, ils s'affrontent pour
+                    être le plus rapide et récupérer le dernier paquet !
+                </p>
+            </details>
+            <details>
+                <summary>Contrôles</summary>
+                <p>
+                    Cliquer sur "REJOINDRE" pour rejoindre la partie. Votre personnage va apparaitre sur la gauche (Jean
+                    ou Jeanne). Jeanne est "RED" tandis que Jean est "BLUE". En cliquant sur
+                    "REJOINDRE" on passe le statut à READY. Quand tous les joueurs sont READY, le jeu commence.
+                </p>
+            </details>
+            <details>
+                <summary>Règles</summary>
+                <p>
+                    Après que tous les joueurs soient en "READY", un paquet de pâtes apparait. Cliquez sur la
+                    <b>fenêtre</b> pour
+                    le récupérer. Si vous êtes le plus rapide vous gagnez un point.
+                    Si vous appuyez trop tôt, vous perdez un point !
+                </p>
+            </details>
+            <details>
+                <summary>Sources</summary>
+                <p>
+                    <ul class="tree-view">
+                        <li>
+                            CSS
+                            <ul>
+                                <li><a href="https://jdan.github.io/98.css/#window" target="_blank"
+                                        rel="noopener noreferrer">98.css</a>
+                                </li>
+                                <li><a href="https://getbootstrap.com" target="_blank"
+                                        rel="noopener noreferrer">Bootstrap
+                                        Grid</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            JavaScript FrontEnd
+                            <ul>
+                                <li>
+                                    <a href="https://phaser.io" target="_blank" rel="noopener noreferrer">Phaser</a>
+                                    <ul>
+                                        <li><a href="https://github.com/ivopc/phaser3-button" target="_blank"
+                                                rel="noopener noreferrer">phaser3-button</a></li>
+                                        <li>Aide obtenue sur Phaser : <a
+                                                href="https://gamedevacademy.org/create-a-basic-multiplayer-game-in-phaser-3-with-socket-io-part-1/"
+                                                target="_blank" rel="noopener noreferrer">GameDevAcademy</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            JavaScript Backend
+                            <ul>
+                                <li>
+                                    <a href="https://nodejs.org/en/" target="_blank"
+                                        rel="noopener noreferrer">Node.js</a>
+                                    <ul>
+                                        <li>express</li>
+                                        <li>socket.io</li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            Special Thanks
+                            <ul>Calvin Ageneau - Visuels</ul>
+                        </li>
+                    </ul>
+                </p>
+            </details>
+        </div>
+    </div>
+</body>
+
+</html>

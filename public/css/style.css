@@ -1,0 +1,10 @@
+canvas,
+body {
+    margin: 0 auto;
+}
+
+.window,
+.title-bar,
+ul.tree-view {
+    font-size: 20px;
+}
